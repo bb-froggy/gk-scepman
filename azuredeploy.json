@@ -165,6 +165,8 @@
             "properties": {
                 "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', parameters('appServicePlanName'))]",
                 "siteConfig": {
+                    "remotedebuggingenabled": true,
+                    "remoteDebuggingVersion": "VS2017",
                     "appSettings": [
                         {
                             "name": "WEBSITE_RUN_FROM_PACKAGE",
